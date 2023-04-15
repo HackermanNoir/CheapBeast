@@ -1,0 +1,186 @@
+/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 16px;
+    line-height: 1.5;
+    background-image: none;
+	background-size: 1000%;
+	height: auto;
+};
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Header styles */
+header {
+    background-color: #836b6b;
+    padding: 0em;
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 0px;
+    color: #000000;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+  }
+  
+  header p {
+    margin-top: 10px;
+    font-size: 35px;
+    text-align: center;
+    color: #000000;
+  }
+  
+  nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    padding-left: 10%;
+    padding-top: 0%;
+  }
+  
+  nav ul li {
+    position: relative;
+    font-size: 30px;
+    font-style: bold;
+  }
+  
+  nav ul li a {
+    color: #29317e;
+    text-decoration: none;
+    padding: 6px;
+    display: block;
+  }
+  
+  nav ul li ul {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #f2f2f2;
+    min-width: 160px;
+    display: none;
+  }
+  
+  nav ul li ul li {
+    font-size: 16px;
+  }
+  
+  nav ul li:hover ul {
+    display: block;
+  }
+  
+  nav ul li ul li a:hover {
+    background-color: #d9d9d9;
+  }
+  
+nav ul ul {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    padding: 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: none;
+}
+
+nav li:hover > ul {
+    display: block;
+}
+
+nav a {
+    display: block;
+    padding: 1rem;
+}
+
+/* Main styles */
+main {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+#part-info {
+    margin-bottom: 2rem;
+}
+
+#part-info h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+#current-sales h2, #buyer-requirements h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+#current-sales p, #buyer-requirements p {
+    margin-bottom: 1rem;
+}
+
+#buyer-requirements a img {
+    width: 380px;
+    height: 90px;
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        padding: 0.5rem;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    nav {
+        display: none;
+        position: absolute;
+        top: 3.5rem;
+        left: 0;
+        background-color: #fff;
+        padding: 1rem;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        width: 100%;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav li {
+        margin-bottom: 1rem;
+    }
+
+    nav a {
+        padding: 0.5rem;
+    }
+
+    .menu-icon {
+        display: block;
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        cursor: pointer;
+        z-index: 2;
+    }
+
+    .menu-icon i {
+        font-size: 2rem;
+    }
+
+    nav.active {
+        display: block;
+    }
+}
